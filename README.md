@@ -24,4 +24,4 @@ Matty scripter uses aws cli for its profile lookup
 
 ##Running Matty
 
-pipenv run python matty/matty.py
+`pipenv run python matty/matty.py`
