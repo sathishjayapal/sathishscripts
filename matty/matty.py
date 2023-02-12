@@ -1,9 +1,8 @@
-from typing import List, Any
+import sys
 
 import boto3
-import sys
 import click
-
+import mattysall
 session = boto3.Session(profile_name='matty');
 ec2 = session.resource('ec2')
 s3 = boto3.client('s3')
@@ -18,7 +17,7 @@ def getInstances(project):
     return ec2instances
 
 
-@click.group()
+@cli.group("instances")
 def instances():
     """Commands for instances"""
 
